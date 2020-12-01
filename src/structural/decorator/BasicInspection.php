@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace structural\decorator;
+namespace Decorator;
 
 class BasicInspection implements CarServiceInterface
 {

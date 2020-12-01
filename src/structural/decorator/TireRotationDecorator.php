@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace structural\decorator;
+namespace Decorator;
 
-class TireRotation implements CarServiceInterface
+class TireRotationDecorator implements CarServiceInterface
 {
     protected int $cost = 15;
 

@@ -1,7 +1,8 @@
 {
   "autoload": {
-    "classmap": [
-      "./"
-    ]
+    "psr-4": {
+      "Adapter\\": "src/structural/adapter",
+      "Decorator\\": "src/structural/decorator"
+    }
   }
 }

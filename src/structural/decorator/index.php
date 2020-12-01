@@ -2,16 +2,16 @@
 
 require 'vendor/autoload.php';
 
-use structural\decorator\BasicInspection;
-use structural\decorator\OilChange;
-use structural\decorator\TireRotation;
+use Decorator\BasicInspection;
+use Decorator\OilChangeDecorator;
+use Decorator\TireRotationDecorator;
 
 $basicInspection = new BasicInspection();
 
-$oilChange   = new OilChange($basicInspection);
-$tires       = new TireRotation($basicInspection);
+$oilChange   = new OilChangeDecorator($basicInspection);
+$tires       = new TireRotationDecorator($basicInspection);
 
-$tiresAndOil = new TireRotation($oilChange);
+$tiresAndOil = new TireRotationDecorator($oilChange);
 
 echo $basicInspection->getDescription() . $basicInspection->getCost();
 echo PHP_EOL;
