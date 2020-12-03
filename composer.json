@@ -2,7 +2,11 @@
   "autoload": {
     "psr-4": {
       "Adapter\\": "src/structural/adapter",
-      "Decorator\\": "src/structural/decorator"
+      "Decorator\\": "src/structural/decorator",
+      "Template\\": "src/behavioral/template"
     }
+  },
+  "require": {
+    "ext-readline": "*"
   }
 }
