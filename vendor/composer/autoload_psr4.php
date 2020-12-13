@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Template\\' => array($baseDir . '/src/behavioral/template'),
+    'Strategy\\' => array($baseDir . '/src/behavioral/strategy'),
     'Decorator\\' => array($baseDir . '/src/structural/decorator'),
     'Adapter\\' => array($baseDir . '/src/structural/adapter'),
 );

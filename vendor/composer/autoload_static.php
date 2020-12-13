@@ -11,6 +11,10 @@ class ComposerStaticInit96df608b28126f3586bb2552d659dc70
         array (
             'Template\\' => 9,
         ),
+        'S' => 
+        array (
+            'Strategy\\' => 9,
+        ),
         'D' => 
         array (
             'Decorator\\' => 10,
@@ -25,6 +29,10 @@ class ComposerStaticInit96df608b28126f3586bb2552d659dc70
         'Template\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src/behavioral/template',
+        ),
+        'Strategy\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/behavioral/strategy',
         ),
         'Decorator\\' => 
         array (

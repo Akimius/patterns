@@ -3,7 +3,8 @@
     "psr-4": {
       "Adapter\\": "src/structural/adapter",
       "Decorator\\": "src/structural/decorator",
-      "Template\\": "src/behavioral/template"
+      "Template\\": "src/behavioral/template",
+      "Strategy\\": "src/behavioral/strategy"
     }
   },
   "require": {
