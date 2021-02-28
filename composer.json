@@ -8,6 +8,10 @@
     }
   },
   "require": {
-    "ext-readline": "*"
+    "ext-readline": "*",
+    "illuminate/support": "^8.28",
+    "ext-pdo": "*",
+    "fakerphp/faker": "^1.13",
+    "ext-http": "*"
   }
 }
