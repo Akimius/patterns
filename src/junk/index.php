@@ -78,11 +78,12 @@ class HalfWithWords
 }
 
 $spellChecker = new HalfWithWords();
+
 echo $spellChecker->spell('пол', 'арбуза') . PHP_EOL;
 echo $spellChecker->spell('пол', 'Москвы') . PHP_EOL;
 echo $spellChecker->spell('пол', 'литра') . PHP_EOL;
 echo $spellChecker->spell('пол', 'литровка') . PHP_EOL;
-echo $spellChecker->spell('полу', 'кармана') . PHP_EOL;
+echo $spellChecker->spell('полу', 'тон') . PHP_EOL;
 
 
 
