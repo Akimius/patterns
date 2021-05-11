@@ -11,10 +11,7 @@
     "ext-readline": "*",
     "ext-pdo": "*",
     "fakerphp/faker": "^1.13",
-    "ext-mbstring": "*"
-  }
-  ,
-  "require-dev": {
-    "roave/security-advisories": "dev-master"
+    "ext-mbstring": "*",
+    "ext-curl": "*"
   }
 }

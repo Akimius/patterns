@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'Template\\' => array($baseDir . '/src/behavioral/template'),
     'Strategy\\' => array($baseDir . '/src/behavioral/strategy'),
+    'Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
     'Faker\\' => array($vendorDir . '/fakerphp/faker/src/Faker'),
     'Decorator\\' => array($baseDir . '/src/structural/decorator'),
     'Adapter\\' => array($baseDir . '/src/structural/adapter'),

@@ -6,6 +6,10 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit96df608b28126f3586bb2552d659dc70
 {
+    public static $files = array (
+        '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
         'T' => 
         array (
@@ -14,6 +18,10 @@ class ComposerStaticInit96df608b28126f3586bb2552d659dc70
         'S' => 
         array (
             'Strategy\\' => 9,
+        ),
+        'P' => 
+        array (
+            'Psr\\Container\\' => 14,
         ),
         'F' => 
         array (
@@ -37,6 +45,10 @@ class ComposerStaticInit96df608b28126f3586bb2552d659dc70
         'Strategy\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src/behavioral/strategy',
+        ),
+        'Psr\\Container\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/container/src',
         ),
         'Faker\\' => 
         array (
