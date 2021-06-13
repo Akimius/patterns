@@ -5,7 +5,7 @@
       "Decorator\\": "src/structural/decorator",
       "Template\\": "src/behavioral/template",
       "Strategy\\": "src/behavioral/strategy",
-      "Builder\\": "src/behavioral/strategy"
+      "Builder\\": "src/creational/builder"
     }
   },
   "require": {

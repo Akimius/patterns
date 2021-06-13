@@ -45,7 +45,7 @@ class MysqlQueryBuilder implements SQLQueryBuilder
      */
     public function limit(int $start, int $offset): SQLQueryBuilder
     {
-        if (!in_array($this->query->type, ['select'])) {
+        if ('select' !== $this->query->type) {
             throw new \Exception("LIMIT can only be added to SELECT");
         }
         $this->query->limit = " LIMIT " . $start . ", " . $offset;
