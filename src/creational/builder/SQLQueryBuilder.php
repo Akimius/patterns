@@ -13,7 +13,9 @@ namespace Builder;
 
 interface SQLQueryBuilder
 {
-    public function select(string $table, array $fields): SQLQueryBuilder;
+    public function select(array $fields): SQLQueryBuilder;
+
+    public function from(string $table): SQLQueryBuilder;
 
     public function where(string $field, string $value, string $operator = '='): SQLQueryBuilder;
 

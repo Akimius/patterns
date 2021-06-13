@@ -23,7 +23,8 @@ function clientCode(SQLQueryBuilder $queryBuilder)
     // ...
 
     $query = $queryBuilder
-        ->select("users", ["name", "email", "password"])
+        ->select(["name", "email", "password"])
+        ->from('users')
         ->where("age", 18, ">")
         ->where("age", 30, "<")
         ->limit(10, 20)

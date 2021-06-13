@@ -8,6 +8,8 @@ class MysqlQueryBuilder implements SQLQueryBuilder
 {
     protected stdClass $query;
 
+    private string $table;
+
     protected function reset(): void
     {
         $this->query = new stdClass();
@@ -16,11 +18,11 @@ class MysqlQueryBuilder implements SQLQueryBuilder
     /**
      * Построение базового запроса SELECT.
      */
-    public function select(string $table, array $fields): SQLQueryBuilder
+    public function select(array $fields): SQLQueryBuilder
     {
         $this->reset();
 
-        $this->query->base = "SELECT " . implode(", ", $fields) . " FROM " . $table;
+        $this->query->base = "SELECT " . implode(", ", $fields); // . " FROM " . $this->table;
         $this->query->type = 'select';
 
         return $this;
@@ -34,6 +36,7 @@ class MysqlQueryBuilder implements SQLQueryBuilder
         if (!in_array($this->query->type, ['select', 'update', 'delete'])) {
             throw new \Exception("WHERE can only be added to SELECT, UPDATE OR DELETE");
         }
+
         $this->query->where[] = "$field $operator '$value'";
 
         return $this;
@@ -53,21 +56,37 @@ class MysqlQueryBuilder implements SQLQueryBuilder
         return $this;
     }
 
+
+    public function from(string $table): SQLQueryBuilder
+    {
+        $this->table = $table;
+
+        return $this;
+    }
+
     /**
      * Получение окончательной строки запроса.
+     * @throws \Exception
      */
     public function getSQL(): string
     {
         $query = $this->query;
-        $sql = $query->base;
+
+        if (empty($this->table)) {
+            throw new \Exception('Table name cannot be empty');
+        }
+
+        $sql = $query->base . " FROM " . $this->table;
+
         if (!empty($query->where)) {
             $sql .= " WHERE " . implode(' AND ', $query->where);
         }
+
         if (isset($query->limit)) {
             $sql .= $query->limit;
         }
+
         $sql .= ";";
         return $sql;
     }
-
 }
