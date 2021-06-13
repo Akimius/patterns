@@ -4,7 +4,8 @@
       "Adapter\\": "src/structural/adapter",
       "Decorator\\": "src/structural/decorator",
       "Template\\": "src/behavioral/template",
-      "Strategy\\": "src/behavioral/strategy"
+      "Strategy\\": "src/behavioral/strategy",
+      "Builder\\": "src/behavioral/strategy"
     }
   },
   "require": {
