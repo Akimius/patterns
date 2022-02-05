@@ -14,6 +14,13 @@
     "ext-pdo": "*",
     "fakerphp/faker": "^1.13",
     "ext-mbstring": "*",
-    "ext-curl": "*"
+    "ext-curl": "*",
+    "swiftmailer/swiftmailer": "^6.0",
+    "authorizenet/authorizenet": "2.0.2",
+    "stymiee/authnetjson": "~4.1"
+  }
+  ,
+  "require-dev": {
+    "roave/security-advisories": "dev-latest"
   }
 }
