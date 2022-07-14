@@ -21,7 +21,7 @@ function chargeCreditCard($amount)
     $merchantAuthentication = new AnetAPI\MerchantAuthenticationType();
 
     $merchantAuthentication->setName('5vm356LN2');
-    $merchantAuthentication->setTransactionKey('3e88qkG4UYV7h88K');
+    $merchantAuthentication->setTransactionKey('3e3kxL23tZL37C67');
 
     // Create the payment data for a credit card
     $creditCard = new AnetAPI\CreditCardType();
@@ -46,7 +46,7 @@ function chargeCreditCard($amount)
     $customerAddress->setAddress("14 Main Street");
     $customerAddress->setCity("Pecan Springs");
     $customerAddress->setState("TX");
-    $customerAddress->setZip('46203'); // invalid ZIP 46205 46282
+    $customerAddress->setZip("46282");
     $customerAddress->setCountry("USA");
 
     // Set the customer's identifying information
@@ -136,7 +136,7 @@ function chargeCreditCard($amount)
     return $response;
 }
 
-chargeCreditCard(1.12);
+chargeCreditCard(13.01);
 
 //if (!defined('DONT_RUN_SAMPLES')) {
 //    chargeCreditCard("2.23");
