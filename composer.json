@@ -17,7 +17,8 @@
     "ext-curl": "*",
     "swiftmailer/swiftmailer": "^6.0",
     "authorizenet/authorizenet": "2.0.2",
-    "stymiee/authnetjson": "~4.1"
+    "stymiee/authnetjson": "~4.1",
+    "io-developer/php-whois": "^4.1"
   }
   ,
   "require-dev": {
