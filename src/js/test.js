@@ -1,12 +1,8 @@
 
-class Person {
-    constructor(name) {
-        this.name = name;
-    }
+import {TaskCollection} from "./TaskCollection";
 
-    greet() {
-        return this.name + ' says hello';
-    }
-}
-
-console.log(new Person('Akim').greet());
+new TaskCollection([
+    'go to the store',
+    'finish cakes',
+    'go to the movie'
+]).dump();

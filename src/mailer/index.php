@@ -1,6 +1,6 @@
 <?php
 
-// {"from": "akim.savchenko@gmail.com", "pass": "MemoranduM169", "port": "465", "login": "akim.savchenko@gmail.com", "address": "smtp.gmail.com", "encryption": "ssl"}
+// {"from": "akim.savchenko@gmail.com", "pass": "***", "port": "465", "login": "akim.savchenko@gmail.com", "address": "smtp.gmail.com", "encryption": "ssl"}
 
 declare(strict_types=1);
 
